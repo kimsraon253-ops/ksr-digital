@@ -48,38 +48,31 @@
     class="bg-slate-100 min-h-screen text-slate-800 flex flex-col justify-between"
   >
     <!-- Header -->
-    <header
-      class="bg-slate-900/95 backdrop-blur-md text-white py-3 px-6 shadow-md sticky top-0 z-40 border-b border-slate-800"
-    >
-      <div class="max-w-6xl mx-auto flex justify-between items-center gap-4">
-        <div
-          class="flex items-center space-x-2 cursor-pointer"
-          onclick="switchView('store')"
-        >
-          <span class="text-indigo-400 text-2xl">⚡</span>
-          <span class="text-lg font-bold tracking-wide">KSR Digital Hub</span>
-        </div>
-
-        <div class="flex items-center space-x-3">
-          <a
-            href="https://t.me/Brozeno_Saler98"
-            target="_blank"
-            class="bg-sky-500 hover:bg-sky-600 text-white px-3.5 py-1.5 rounded-xl text-xs font-semibold flex items-center space-x-1.5 transition shadow-sm"
-          >
-            <span>✈️</span>
-            <span>ទាក់ទង Telegram</span>
-          </a>
-
-          <button
-            onclick="switchView('admin')"
-            class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 px-3.5 py-1.5 rounded-xl transition flex items-center space-x-1.5"
-          >
-            <span>⚙️</span>
-            <span>Upload & Admin</span>
-          </button>
-        </div>
+   <header
+    class="bg-slate-900/95 backdrop-blur-md text-white py-3 px-6 shadow-md sticky top-0 z-40 border-b border-slate-800"
+  >
+    <div class="max-w-6xl mx-auto flex justify-between items-center gap-4">
+      <!-- ចុចលើ Logo 3 ដងជាប់គ្នាដើម្បីបើក Admin -->
+      <div
+        class="flex items-center space-x-2 cursor-pointer select-none"
+        onclick="if(!window.lCount) window.lCount=0; window.lCount++; if(window.lCount>=3){ window.lCount=0; switchView('admin'); }"
+      >
+        <span class="text-indigo-400 text-2xl">⚡</span>
+        <span class="text-lg font-bold tracking-wide">KSR Digital Hub</span>
       </div>
-    </header>
+
+      <div class="flex items-center space-x-3">
+        <a
+          href="https://t.me/Brozeno_Saler98"
+          target="_blank"
+          class="bg-indigo-600 hover:bg-indigo-500 text-white text-xs px-3.5 py-1.5 rounded-xl font-medium transition flex items-center space-x-1.5"
+        >
+          <span>✈️</span>
+          <span>ទាក់ទង Telegram</span>
+        </a>
+      </div>
+    </div>
+  </header>
 
     <!-- STORE VIEW -->
     <main id="store-view" class="flex-1 w-full pb-10">

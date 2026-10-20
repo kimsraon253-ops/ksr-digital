@@ -1,0 +1,1063 @@
+<!doctype html>
+<html lang="km">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KSR Digital Store & Course Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Kantumruy Pro", sans-serif;
+      }
+      .hero-gradient {
+        background: linear-gradient(
+          135deg,
+          #090d16 0%,
+          #17153b 50%,
+          #0c1022 100%
+        );
+      }
+      @keyframes pulseGlow {
+        0%,
+        100% {
+          opacity: 0.25;
+          transform: scale(1);
+        }
+        50% {
+          opacity: 0.45;
+          transform: scale(1.08);
+        }
+      }
+      .animate-glow {
+        animation: pulseGlow 6s infinite ease-in-out;
+      }
+      .slide-item {
+        transition:
+          opacity 0.7s ease-in-out,
+          transform 0.7s ease-in-out;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-slate-100 min-h-screen text-slate-800 flex flex-col justify-between"
+  >
+    <!-- Header -->
+    <header
+      class="bg-slate-900/95 backdrop-blur-md text-white py-3 px-6 shadow-md sticky top-0 z-40 border-b border-slate-800"
+    >
+      <div class="max-w-6xl mx-auto flex justify-between items-center gap-4">
+        <div
+          class="flex items-center space-x-2 cursor-pointer"
+          onclick="switchView('store')"
+        >
+          <span class="text-indigo-400 text-2xl">⚡</span>
+          <span class="text-lg font-bold tracking-wide">KSR Digital Hub</span>
+        </div>
+
+        <div class="flex items-center space-x-3">
+          <a
+            href="https://t.me/Brozeno_Saler98"
+            target="_blank"
+            class="bg-sky-500 hover:bg-sky-600 text-white px-3.5 py-1.5 rounded-xl text-xs font-semibold flex items-center space-x-1.5 transition shadow-sm"
+          >
+            <span>✈️</span>
+            <span>ទាក់ទង Telegram</span>
+          </a>
+
+          <button
+            onclick="switchView('admin')"
+            class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 px-3.5 py-1.5 rounded-xl transition flex items-center space-x-1.5"
+          >
+            <span>⚙️</span>
+            <span>Upload & Admin</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- STORE VIEW -->
+    <main id="store-view" class="flex-1 w-full pb-10">
+      <!-- ================= COMPACT SLIDER COVER ផ្នែកខាងលើ ================= -->
+      <section
+        class="hero-gradient text-white py-6 px-4 sm:px-6 relative overflow-hidden shadow-lg mb-6 border-b border-indigo-950"
+      >
+        <!-- Ambient Glows -->
+        <div
+          class="absolute -top-10 left-1/4 w-60 h-60 bg-indigo-600/30 rounded-full blur-3xl pointer-events-none animate-glow"
+        ></div>
+        <div
+          class="absolute -bottom-10 right-1/4 w-64 h-64 bg-sky-500/25 rounded-full blur-3xl pointer-events-none animate-glow"
+          style="animation-delay: 3s"
+        ></div>
+
+        <div class="max-w-4xl mx-auto relative z-10">
+          <!-- Slider Container -->
+          <div
+            class="relative min-h-[145px] sm:min-h-[135px] flex items-center justify-center text-center"
+          >
+            <!-- Slide 1 -->
+            <div
+              id="slide-0"
+              class="slide-item absolute inset-0 flex flex-col items-center justify-center opacity-100 scale-100 transition duration-700"
+            >
+              <div
+                class="inline-flex items-center space-x-1.5 bg-indigo-900/70 border border-indigo-500/40 px-3 py-1 rounded-full text-indigo-300 text-[11px] font-semibold mb-2"
+              >
+                <span>🔥</span>
+                <span>មជ្ឈមណ្ឌលឌីជីថល FB Ads & Social Assets</span>
+              </div>
+              <h1
+                class="text-xl sm:text-3xl font-extrabold tracking-tight mb-1 text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 via-sky-200 to-teal-200"
+              >
+                ពង្រីកអាជីវកម្មអនឡាញជាមួយ KSR Digital Hub
+              </h1>
+              <p
+                class="text-slate-300 text-[11px] sm:text-xs max-w-xl mx-auto font-light leading-relaxed"
+              >
+                ផ្គត់ផ្គង់គណនី FB ធន់, វគ្គសិក្សា Boost Post & Verify Page/BM
+                រហ័សទាន់ចិត្ត
+              </p>
+            </div>
+
+            <!-- Slide 2 -->
+            <div
+              id="slide-1"
+              class="slide-item absolute inset-0 flex flex-col items-center justify-center opacity-0 scale-95 pointer-events-none transition duration-700"
+            >
+              <div
+                class="inline-flex items-center space-x-1.5 bg-blue-900/70 border border-blue-500/40 px-3 py-1 rounded-full text-blue-300 text-[11px] font-semibold mb-2"
+              >
+                <span>🛡️</span>
+                <span>មេរៀនកម្រិតខ្ពស់ & Verify Page</span>
+              </div>
+              <h2
+                class="text-xl sm:text-3xl font-extrabold tracking-tight mb-1 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-sky-200 to-indigo-200"
+              >
+                Verify Page សញ្ញាធិកខៀវ & ដោះស្រាយបញ្ហា Policy
+              </h2>
+              <p
+                class="text-slate-300 text-[11px] sm:text-xs max-w-xl mx-auto font-light leading-relaxed"
+              >
+                បង្រៀន Verify Business Manager (BM Green) និងតិចនិក Refunds
+                Money ពី Meta
+              </p>
+            </div>
+
+            <!-- Slide 3 -->
+            <div
+              id="slide-2"
+              class="slide-item absolute inset-0 flex flex-col items-center justify-center opacity-0 scale-95 pointer-events-none transition duration-700"
+            >
+              <div
+                class="inline-flex items-center space-x-1.5 bg-emerald-900/70 border border-emerald-500/40 px-3 py-1 rounded-full text-emerald-300 text-[11px] font-semibold mb-2"
+              >
+                <span>⚡</span>
+                <span>គណនី 2FA & Automation Tools</span>
+              </div>
+              <h2
+                class="text-xl sm:text-3xl font-extrabold tracking-tight mb-1 text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-teal-200 to-cyan-200"
+              >
+                គណនី FB ធន់ខ្លាំង & E-Books យុទ្ធសាស្ត្រលក់
+              </h2>
+              <p
+                class="text-slate-300 text-[11px] sm:text-xs max-w-xl mx-auto font-light leading-relaxed"
+              >
+                មាន 2FA សុវត្ថិភាពខ្ពស់ ធានាប្តូរជូនថ្មី
+                ព្រមទាំងផ្តល់ការប្រឹក្សាគ្រប់ពេល
+              </p>
+            </div>
+          </div>
+
+          <!-- Slider Dots -->
+          <div class="flex justify-center items-center space-x-1.5 my-3">
+            <button
+              onclick="setSlide(0)"
+              id="dot-0"
+              class="w-6 h-1.5 rounded-full bg-indigo-500 transition-all"
+            ></button>
+            <button
+              onclick="setSlide(1)"
+              id="dot-1"
+              class="w-2 h-1.5 rounded-full bg-slate-600 transition-all"
+            ></button>
+            <button
+              onclick="setSlide(2)"
+              id="dot-2"
+              class="w-2 h-1.5 rounded-full bg-slate-600 transition-all"
+            ></button>
+          </div>
+
+          <!-- Action Buttons (Compact) -->
+          <div class="flex flex-wrap items-center justify-center gap-2.5 mb-4">
+            <a
+              href="#product-container"
+              class="bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold px-4 py-2 rounded-xl transition shadow-md shadow-indigo-600/30 flex items-center space-x-1.5"
+            >
+              <span>🔍 រកទំនិញ & មេរៀន</span>
+              <span>↓</span>
+            </a>
+            <a
+              href="https://t.me/Brozeno_Saler98"
+              target="_blank"
+              class="bg-slate-800/90 hover:bg-slate-700 text-slate-200 border border-slate-700 text-xs font-semibold px-4 py-2 rounded-xl transition flex items-center space-x-1.5"
+            >
+              <span>✈️ ជជែកផ្ទាល់ (@Brozeno_Saler98)</span>
+            </a>
+          </div>
+
+          <!-- Compact Trust Badges -->
+          <div
+            class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-3 border-t border-slate-800/60 text-center"
+          >
+            <div
+              class="bg-slate-900/60 border border-slate-800/80 rounded-lg py-1.5 px-2"
+            >
+              <span class="text-indigo-400 font-bold text-[11px]"
+                >🔒 2FA Security</span
+              >
+              <p class="text-[9px] text-slate-400">គណនីមានសុវត្ថិភាព</p>
+            </div>
+            <div
+              class="bg-slate-900/60 border border-slate-800/80 rounded-lg py-1.5 px-2"
+            >
+              <span class="text-sky-400 font-bold text-[11px]"
+                >⚡ Instant Access</span
+              >
+              <p class="text-[9px] text-slate-400">ទទួលមេរៀនភ្លាមៗ</p>
+            </div>
+            <div
+              class="bg-slate-900/60 border border-slate-800/80 rounded-lg py-1.5 px-2"
+            >
+              <span class="text-teal-400 font-bold text-[11px]"
+                >🛡️ Guarantee</span
+              >
+              <p class="text-[9px] text-slate-400">មានការធានាត្រឹមត្រូវ</p>
+            </div>
+            <div
+              class="bg-slate-900/60 border border-slate-800/80 rounded-lg py-1.5 px-2"
+            >
+              <span class="text-amber-400 font-bold text-[11px]"
+                >💬 Support 24/7</span
+              >
+              <p class="text-[9px] text-slate-400">ប្រឹក្សាយោបល់រហ័ស</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Content Area: Filter & Products -->
+      <div class="max-w-6xl mx-auto px-4">
+        <!-- Filters -->
+        <div class="flex gap-2 justify-center flex-wrap mb-6">
+          <button
+            onclick="setFilter('all')"
+            class="filter-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-indigo-600 text-white shadow-sm"
+            data-cat="all"
+          >
+            ទាំងអស់ (<span id="count-all">0</span>)
+          </button>
+          <button
+            onclick="setFilter('course')"
+            class="filter-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-white text-slate-600 border border-slate-200"
+            data-cat="course"
+          >
+            🎓 វគ្គសិក្សា (<span id="count-course">0</span>)
+          </button>
+          <button
+            onclick="setFilter('fb_account')"
+            class="filter-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-white text-slate-600 border border-slate-200"
+            data-cat="fb_account"
+          >
+            👤 គណនី FB & BM (<span id="count-fb">0</span>)
+          </button>
+          <button
+            onclick="setFilter('tools')"
+            class="filter-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-white text-slate-600 border border-slate-200"
+            data-cat="tools"
+          >
+            🛠️ Tools & E-Books (<span id="count-tools">0</span>)
+          </button>
+        </div>
+
+        <!-- Product Grid -->
+        <div
+          id="product-container"
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+        ></div>
+      </div>
+    </main>
+
+    <!-- ADMIN VIEW -->
+    <main
+      id="admin-view"
+      class="max-w-4xl mx-auto px-4 py-8 hidden flex-1 w-full"
+    >
+      <div
+        class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm mb-6"
+      >
+        <div
+          class="flex justify-between items-center pb-4 mb-4 border-b border-slate-100"
+        >
+          <div>
+            <h2 id="form-title" class="text-lg font-bold text-slate-900">
+              Upload ផលិតផល និងមេរៀន (Admin Dashboard)
+            </h2>
+            <p id="form-subtitle" class="text-xs text-slate-500">
+              បញ្ចូលរូបភាព តម្លៃ និងព័ត៌មានទំនិញទៅក្នុង Website
+            </p>
+          </div>
+          <div class="flex gap-2">
+            <button
+              id="cancel-edit-btn"
+              onclick="cancelEdit()"
+              class="hidden text-xs bg-amber-50 hover:bg-amber-100 text-amber-700 border border-amber-200 px-3 py-1.5 rounded-lg font-medium"
+            >
+              បោះបង់ការកែ
+            </button>
+            <button
+              onclick="switchView('store')"
+              class="text-xs bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-1.5 rounded-lg font-medium"
+            >
+              ← ត្រឡប់ទៅហាង
+            </button>
+          </div>
+        </div>
+
+        <form onsubmit="handleFormSubmit(event)" class="space-y-4">
+          <input type="hidden" id="edit-item-id" />
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+            <div>
+              <label class="block text-xs font-semibold text-slate-600 mb-1"
+                >ផ្នែកទំនិញ</label
+              >
+              <select
+                id="new-item-cat"
+                class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs"
+              >
+                <option value="course">វគ្គសិក្សា និងតិចនិក</option>
+                <option value="fb_account">គណនី និង Page FB</option>
+                <option value="tools">ឯកសារ & Tools ជំនួយ</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-600 mb-1"
+                >តម្លៃ ($)</label
+              >
+              <input
+                type="number"
+                step="0.1"
+                id="new-item-price"
+                placeholder="ឧទាហរណ៍៖ 15.00"
+                required
+                class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs"
+              />
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-600 mb-1"
+                >Tag សម្គាល់</label
+              >
+              <input
+                type="text"
+                id="new-item-tag"
+                placeholder="ឧទាហរណ៍៖ ពេញនិយម"
+                class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1"
+              >ឈ្មោះផលិតផល / ចំណងជើងមេរៀន</label
+            >
+            <input
+              type="text"
+              id="new-item-name"
+              placeholder="ឧទាហរណ៍៖ តិចនិក Verify Page សញ្ញាធិកខៀវ"
+              required
+              class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs"
+            />
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1"
+              >Upload រូបភាពផលិតផល
+              <span id="img-edit-hint" class="text-slate-400 font-normal"></span
+            ></label>
+            <input
+              type="file"
+              id="new-item-image"
+              accept="image/*"
+              class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs file:mr-3 file:py-1 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-indigo-50 file:text-indigo-700"
+            />
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1"
+              >ព័ត៌មានសម្ងាត់ (សម្រាប់គណនី FB ដូចជា UID|Pass|2FA)</label
+            >
+            <input
+              type="text"
+              id="new-item-secret"
+              placeholder="100089234123|Pass@2026|JBSWY3DPEHPK3PXP"
+              class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs font-mono"
+            />
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1"
+              >ការពិពណ៌នាសង្ខេប</label
+            >
+            <textarea
+              id="new-item-info"
+              rows="2"
+              placeholder="សេចក្តីលម្អិតពីមាតិកា..."
+              required
+              class="w-full bg-slate-50 border border-slate-200 rounded-xl p-2.5 text-xs"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            id="submit-btn"
+            class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2.5 rounded-xl transition text-xs shadow-md"
+          >
+            + បញ្ចូលទំនិញទៅក្នុង Website
+          </button>
+        </form>
+      </div>
+
+      <!-- Inventory Table -->
+      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+        <h3 class="font-bold text-slate-900 text-sm mb-3">
+          បញ្ជីទំនិញទាំងអស់ (<span id="total-items-count">0</span>)
+        </h3>
+        <div
+          id="admin-items-table"
+          class="space-y-2 overflow-y-auto max-h-80"
+        ></div>
+      </div>
+    </main>
+
+    <!-- MODAL: Main Details & Direct Telegram Link -->
+    <div
+      id="hub-modal"
+      class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm hidden items-center justify-center p-3 sm:p-4 z-50"
+    >
+      <div
+        class="bg-white rounded-2xl max-w-4xl w-full p-5 sm:p-6 shadow-2xl relative max-h-[92vh] flex flex-col overflow-y-auto"
+      >
+        <button
+          onclick="closeModal()"
+          class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 text-2xl font-bold leading-none"
+        >
+          &times;
+        </button>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-12 gap-5 pb-6 border-b border-slate-200"
+        >
+          <div class="md:col-span-5">
+            <div
+              class="relative rounded-xl overflow-hidden bg-slate-100 border border-slate-200 h-52"
+            >
+              <img
+                id="hub-img"
+                src=""
+                alt="Thumbnail"
+                class="w-full h-full object-cover"
+              />
+              <span
+                id="hub-badge"
+                class="absolute top-2.5 left-2.5 text-[10px] font-bold px-2 py-0.5 rounded-md shadow-sm"
+              ></span>
+            </div>
+          </div>
+
+          <div class="md:col-span-7 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-start gap-2">
+                <h2
+                  id="hub-title"
+                  class="font-extrabold text-slate-900 text-lg sm:text-xl leading-snug"
+                ></h2>
+                <span
+                  id="hub-price"
+                  class="text-2xl font-black text-indigo-900 whitespace-nowrap"
+                ></span>
+              </div>
+              <p
+                id="hub-desc"
+                class="text-xs text-slate-600 mt-2 leading-relaxed"
+              ></p>
+            </div>
+
+            <div
+              class="mt-5 bg-slate-50 p-4 rounded-xl border border-slate-200"
+            >
+              <button
+                onclick="orderViaTelegramCurrent()"
+                class="w-full bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-4 rounded-xl text-xs sm:text-sm transition shadow-md flex items-center justify-center space-x-2"
+              >
+                <span>✈️ ចុចទិញ & ចូលរៀនតាម Telegram</span>
+              </button>
+
+              <div id="secret-action-box" class="hidden mt-3">
+                <span class="text-[11px] font-bold text-slate-700"
+                  >ទិន្នន័យគណនី (UID|Pass|2FA):</span
+                >
+                <div
+                  id="hub-secret-text"
+                  class="bg-white p-2.5 rounded-lg border border-slate-300 font-mono text-xs text-slate-800 break-all select-all mt-1"
+                ></div>
+              </div>
+
+              <div class="mt-3 text-center text-[11px] text-slate-500">
+                <span>📩 ទំនាក់ទំនងផ្ទាល់៖ </span>
+                <a
+                  href="https://t.me/Brozeno_Saler98"
+                  target="_blank"
+                  class="text-sky-600 font-bold hover:underline"
+                  >@Brozeno_Saler98</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-5">
+          <div class="flex justify-between items-center mb-3">
+            <h3
+              class="font-bold text-slate-900 text-sm flex items-center space-x-1.5"
+            >
+              <span>🔥</span>
+              <span>ទំនិញ និងមេរៀនផ្សេងៗទៀតដែលអ្នកអាចចាប់អារម្មណ៍</span>
+            </h3>
+            <span class="text-[11px] text-slate-400"
+              >ចុចលើរូបដើម្បីប្តូរមើល</span
+            >
+          </div>
+          <div
+            id="hub-more-items"
+            class="grid grid-cols-1 sm:grid-cols-3 gap-3"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="bg-white border-t border-slate-200 py-5 text-center text-xs text-slate-500"
+    >
+      <div
+        class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-3"
+      >
+        <div>© 2026 KSR Digital Hub. រក្សាសិទ្ធិគ្រប់យ៉ាង។</div>
+        <div>
+          ទំនាក់ទំនង Telegram:
+          <a
+            href="https://t.me/Brozeno_Saler98"
+            target="_blank"
+            class="text-sky-600 font-bold hover:underline"
+            >@Brozeno_Saler98</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const expandedProducts = [
+        {
+          id: "c-verify-page",
+          cat: "course",
+          name: "វគ្គសិក្សា៖ តិចនិក Verify Page សញ្ញាធិកខៀវ (Blue Badge)",
+          price: 25.0,
+          image:
+            "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=500&q=80",
+          info: "មគ្គុទ្ទេសក៍ពេញលេញ៖ របៀបរៀបចំ Notability, ឯកសារច្បាប់អាជីវកម្ម ឬបុគ្គលសាធារណៈ, តិចនិកបំពេញ Form ឱ្យជាប់ និងចៀសវាងការបដិសេធពី Meta។",
+          tag: "ធិកខៀវ",
+        },
+        {
+          id: "c-verify-bm",
+          cat: "course",
+          name: "វគ្គសិក្សា៖ វិធីសាស្ត្រ Verify Business Manager (BM Green)",
+          price: 30.0,
+          image:
+            "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=500&q=80",
+          info: "បង្រៀន Verify អាជីវកម្មស្របច្បាប់៖ ផ្ទៀងផ្ទាត់ Domain, វិក្កយបត្រពន្ធ/ទឹកភ្លើង, លេខទូរស័ព្ទផ្លូវការ ដើម្បីដោះ Limit Ad Account និងដំឡើង Trust ខ្ពស់បំផុត។",
+          tag: "BM ធន់",
+        },
+        {
+          id: "c-refund-money",
+          cat: "course",
+          name: "វគ្គសិក្សា៖ តិចនិក Refunds Money ពី Meta / Facebook",
+          price: 20.0,
+          image:
+            "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=500&q=80",
+          info: "វិធីសាស្ត្រ Chat ជាមួយ Meta Support ដោយផ្ទាល់ដើម្បីទាមទារលុយមកវិញករណី៖ កាត់លុយស្ទួន, Ad Account ជាប់ Restriction ពេលកំពុងរត់ ឬត្រូវគេ Hack យកកាតទៅកាត់។",
+          tag: "លុយមកវិញ",
+        },
+        {
+          id: "c-1",
+          cat: "course",
+          name: "វគ្គសិក្សា៖ តិចនិក Boost Post & Run Ads 2026",
+          price: 15.0,
+          image:
+            "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&q=80",
+          info: "មេរៀនវីដេអូលម្អិតពីមូលដ្ឋានដល់កម្រិតខ្ពស់ Target Audience ចំគោលដៅ គណនា Cost និងការពារ Page មិនឱ្យជាប់ Restriction។",
+          tag: "ពេញនិយម",
+        },
+        {
+          id: "c-2",
+          cat: "course",
+          name: "វិធីសាស្ត្រដោះស្រាយ Page ជាប់ Policy & Disable",
+          price: 20.0,
+          image:
+            "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=500&q=80",
+          info: "តិចនិកប្តឹងទាមទារ Page មកវិញ និងវិធីការពារមិនឱ្យ Admin ជាប់ Checkpoint ឬ Restriction ពេលរត់ Ads។",
+          tag: "ចាំបាច់",
+        },
+        {
+          id: "c-3",
+          cat: "course",
+          name: "វគ្គផលិតវីដេអូខ្លី (Reels & TikTok) ដោយប្រើ AI",
+          price: 18.0,
+          image:
+            "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&q=80",
+          info: "បង្រៀនបង្កើត Prompts រូបភាព និងវីដេអូ AI បង្កើតសាច់រឿងលក់ទំនិញឱ្យផ្ទុះការចាប់អារម្មណ៍ខ្ពស់លើ Online។",
+          tag: "ថ្មី 2026",
+        },
+        {
+          id: "fb-1",
+          cat: "fb_account",
+          name: "គណនី FB Clone (2FA + Cookies)",
+          price: 2.5,
+          image:
+            "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=500&q=80",
+          info: "គណនីមាន Friend ចាស់ៗ ស្រាប់ សម្រាប់រត់ Ads ឬ Share Post ចូល Group មាន 2FA និង Backup Mail។",
+          tag: "លក់ដាច់",
+          secret: "100089234123|Pass@2026|JBSWY3DPEHPK3PXP|chheang@mail.com",
+        },
+        {
+          id: "fb-2",
+          cat: "fb_account",
+          name: "គណនី FB Vietnam ធន់ខ្លាំង (Via Ngoại 2021)",
+          price: 3.5,
+          image:
+            "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500&q=80",
+          info: "គណនីចាស់បង្កើតតាំងពី 2021 ធន់នឹងការ Add Card និងបង្កើត Ad Account មិនងាយ Disable ឡើយ។",
+          tag: "រត់ Ads ខ្លាំង",
+          secret: "100078234991|Pass@Vn2026|KBSWY3DPEHPK3PXQ|vnuser@mail.com",
+        },
+        {
+          id: "fb-3",
+          cat: "fb_account",
+          name: "Business Manager (BM50 / BM250)",
+          price: 12.0,
+          image:
+            "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=500&q=80",
+          info: "BM បង្កើត Ad Account បានច្រើន Limit ធំ សម្រាប់ទីភ្នាក់ងាររត់ Ads និង Boost Post ទំហំធំ។",
+          tag: "Agency",
+          secret: "BM_ID: 98127391823 | Token: EAABw...",
+        },
+        {
+          id: "t-1",
+          cat: "tools",
+          name: "សៀវភៅ E-Book: យុទ្ធសាស្ត្រលក់លើ Online ឱ្យផ្ទុះ",
+          price: 5.0,
+          image:
+            "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=500&q=80",
+          info: "ឯកសារ PDF ជាង ១០០ ទំព័រ ចងក្រងពីចិត្តសាស្ត្រលក់ និងរបៀបសរសេរ Content ទាក់ទាញអតិថិជន។",
+          tag: "E-Book",
+        },
+        {
+          id: "t-2",
+          cat: "tools",
+          name: "Tool Auto-Reply Comment & Messenger (Source Code)",
+          price: 35.0,
+          image:
+            "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500&q=80",
+          info: "ប្រព័ន្ធឆ្លើយតបសារស្វ័យប្រវត្ត ឆែកលេខទូរស័ព្ទ និងទាញ Lead ចូល Excel ដោយស្វ័យប្រវត្តិ។",
+          tag: "Full Code",
+        },
+        {
+          id: "t-3",
+          cat: "tools",
+          name: "កញ្ចប់ 100+ Prompt AI សម្រាប់សរសេរ Caption លក់",
+          price: 6.0,
+          image:
+            "https://images.unsplash.com/photo-1677442136019-21780efad99a?w=500&q=80",
+          info: "Prompt សម្រិតសម្រាំងសម្រាប់ ChatGPT និង Claude បង្កើត Caption លក់ដាច់ខ្លាំងគ្រប់វិស័យ។",
+          tag: "AI Prompts",
+        },
+      ];
+
+      let products =
+        JSON.parse(localStorage.getItem("ksr_products_v12")) ||
+        expandedProducts;
+      let currentActiveItem = null;
+      let currentFilter = "all";
+
+      function saveState() {
+        try {
+          localStorage.setItem("ksr_products_v12", JSON.stringify(products));
+        } catch (e) {
+          console.error("LocalStorage error:", e);
+        }
+      }
+
+      function updateCounts() {
+        document.getElementById("count-all").innerText = products.length;
+        document.getElementById("count-course").innerText = products.filter(
+          (p) => p.cat === "course",
+        ).length;
+        document.getElementById("count-fb").innerText = products.filter(
+          (p) => p.cat === "fb_account",
+        ).length;
+        document.getElementById("count-tools").innerText = products.filter(
+          (p) => p.cat === "tools",
+        ).length;
+      }
+
+      // ================= SLIDER & ANIMATION LOGIC =================
+      let currentSlide = 0;
+      const totalSlides = 3;
+
+      function setSlide(index) {
+        currentSlide = index;
+        for (let i = 0; i < totalSlides; i++) {
+          const slide = document.getElementById(`slide-${i}`);
+          const dot = document.getElementById(`dot-${i}`);
+          if (i === index) {
+            slide.classList.remove(
+              "opacity-0",
+              "scale-95",
+              "pointer-events-none",
+            );
+            slide.classList.add("opacity-100", "scale-100");
+            dot.className =
+              "w-6 h-1.5 rounded-full bg-indigo-500 transition-all";
+          } else {
+            slide.classList.add("opacity-0", "scale-95", "pointer-events-none");
+            slide.classList.remove("opacity-100", "scale-100");
+            dot.className =
+              "w-2 h-1.5 rounded-full bg-slate-600 transition-all";
+          }
+        }
+      }
+
+      setInterval(() => {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        setSlide(currentSlide);
+      }, 4500);
+
+      // ================= RENDER PRODUCTS =================
+      function renderProducts(items = products) {
+        const container = document.getElementById("product-container");
+        container.innerHTML = "";
+        updateCounts();
+
+        items.forEach((item) => {
+          const catBadge =
+            item.cat === "course"
+              ? "bg-amber-100 text-amber-800"
+              : item.cat === "fb_account"
+                ? "bg-blue-100 text-blue-800"
+                : "bg-emerald-100 text-emerald-800";
+          const catName =
+            item.cat === "course"
+              ? "មេរៀន"
+              : item.cat === "fb_account"
+                ? "គណនី FB"
+                : "Tools";
+
+          container.innerHTML += `
+          <div onclick="openHubModal('${item.id}')" class="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-200 cursor-pointer flex flex-col justify-between group">
+            <div>
+              <div class="relative h-36 w-full bg-slate-100 overflow-hidden">
+                <img src="${item.image || "https://via.placeholder.com/300x200?text=No+Image"}" alt="${item.name}" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                <span class="absolute top-2 left-2 text-[10px] font-bold px-2 py-0.5 rounded-md ${catBadge} shadow-sm">${catName} • ${item.tag || "ថ្មី"}</span>
+              </div>
+              <div class="p-3">
+                <div class="flex justify-between items-start mb-1">
+                  <h3 class="font-bold text-slate-800 text-xs sm:text-sm line-clamp-1 group-hover:text-indigo-600 transition">${item.name}</h3>
+                </div>
+                <div class="text-base font-black text-indigo-900 mb-1">$${item.price.toFixed(2)}</div>
+                <p class="text-[11px] text-slate-500 line-clamp-2 leading-relaxed">${item.info}</p>
+              </div>
+            </div>
+            
+            <div class="px-3 pb-3">
+              <button class="w-full py-1.5 bg-sky-50 group-hover:bg-sky-500 text-sky-700 group-hover:text-white text-xs font-semibold rounded-xl transition shadow-sm flex items-center justify-center space-x-1">
+                <span>✈️ មើល & ទិញតាម Telegram</span>
+              </button>
+            </div>
+          </div>
+        `;
+        });
+      }
+
+      function setFilter(cat) {
+        currentFilter = cat;
+        document.querySelectorAll(".filter-btn").forEach((btn) => {
+          if (btn.dataset.cat === cat) {
+            btn.className =
+              "filter-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-indigo-600 text-white shadow-sm";
+          } else {
+            btn.className =
+              "filter-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-white text-slate-600 border border-slate-200";
+          }
+        });
+        const filtered =
+          cat === "all" ? products : products.filter((p) => p.cat === cat);
+        renderProducts(filtered);
+      }
+
+      function openHubModal(id) {
+        currentActiveItem = products.find((p) => p.id === id);
+        if (!currentActiveItem) return;
+
+        document.getElementById("hub-img").src =
+          currentActiveItem.image || "https://via.placeholder.com/300x200";
+        document.getElementById("hub-title").innerText = currentActiveItem.name;
+        document.getElementById("hub-price").innerText =
+          `$${currentActiveItem.price.toFixed(2)}`;
+        document.getElementById("hub-desc").innerText = currentActiveItem.info;
+
+        const badge = document.getElementById("hub-badge");
+        badge.innerText = currentActiveItem.tag || "ព័ត៌មាន";
+        badge.className =
+          "absolute top-2.5 left-2.5 text-[10px] font-bold px-2 py-0.5 rounded-md bg-indigo-100 text-indigo-800 shadow-sm";
+
+        const secretBox = document.getElementById("secret-action-box");
+        const secretText = document.getElementById("hub-secret-text");
+        if (currentActiveItem.secret) {
+          secretBox.classList.remove("hidden");
+          secretText.innerText = currentActiveItem.secret;
+        } else {
+          secretBox.classList.add("hidden");
+        }
+
+        renderMoreItemsInside(currentActiveItem.id);
+
+        document.getElementById("hub-modal").classList.remove("hidden");
+        document.getElementById("hub-modal").classList.add("flex");
+      }
+
+      function renderMoreItemsInside(currentId) {
+        const container = document.getElementById("hub-more-items");
+        container.innerHTML = "";
+
+        const otherItems = products
+          .filter((p) => p.id !== currentId)
+          .slice(0, 3);
+
+        otherItems.forEach((item) => {
+          container.innerHTML += `
+          <div onclick="openHubModal('${item.id}')" class="p-2.5 bg-slate-50 hover:bg-indigo-50 border border-slate-200 hover:border-indigo-300 rounded-xl transition cursor-pointer flex items-center space-x-3">
+            <img src="${item.image || "https://via.placeholder.com/50"}" class="w-12 h-12 rounded-lg object-cover border border-slate-200 flex-shrink-0">
+            <div class="flex-1 truncate">
+              <h4 class="text-xs font-bold text-slate-800 truncate">${item.name}</h4>
+              <span class="text-xs font-black text-indigo-900">$${item.price.toFixed(2)}</span>
+            </div>
+            <span class="text-slate-400 text-sm">→</span>
+          </div>
+        `;
+        });
+      }
+
+      function orderViaTelegramCurrent() {
+        if (!currentActiveItem) return;
+        const message = `សួស្តី! ខ្ញុំចាប់អារម្មណ៍ទំនិញ/មេរៀននេះពី KSR Digital Hub៖\n\n📌 ឈ្មោះ៖ ${currentActiveItem.name}\n💵 តម្លៃ៖ $${currentActiveItem.price.toFixed(2)}\n\nសូមផ្ញើព័ត៌មានលម្អិត និងគណនី ABA សម្រាប់ទូទាត់!`;
+        const telegramLink = `https://t.me/Brozeno_Saler98?text=${encodeURIComponent(message)}`;
+        window.open(telegramLink, "_blank");
+      }
+
+      function closeModal() {
+        document.getElementById("hub-modal").classList.add("hidden");
+        document.getElementById("hub-modal").classList.remove("flex");
+      }
+
+      // ================= ADMIN OPERATIONS =================
+      function startEdit(id) {
+        const item = products.find((p) => p.id === id);
+        if (!item) return;
+
+        document.getElementById("edit-item-id").value = item.id;
+        document.getElementById("new-item-cat").value = item.cat;
+        document.getElementById("new-item-price").value = item.price;
+        document.getElementById("new-item-tag").value = item.tag || "";
+        document.getElementById("new-item-name").value = item.name;
+        document.getElementById("new-item-secret").value = item.secret || "";
+        document.getElementById("new-item-info").value = item.info;
+
+        document.getElementById("form-title").innerText =
+          "កែសម្រួលទំនិញ / មេរៀន";
+        document.getElementById("form-subtitle").innerText =
+          "កែសម្រួលព័ត៌មានខាងក្រោម រួចចុច រក្សាទុក";
+        document.getElementById("img-edit-hint").innerText =
+          "(ទុកទទេបើមិនចង់ប្តូររូបភាព)";
+        document.getElementById("submit-btn").innerText =
+          "💾 រក្សាទុកការកែប្រែ";
+        document.getElementById("submit-btn").className =
+          "w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2.5 rounded-xl transition text-xs shadow-md";
+        document.getElementById("cancel-edit-btn").classList.remove("hidden");
+
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      function cancelEdit() {
+        document.getElementById("edit-item-id").value = "";
+        document.querySelector("form").reset();
+
+        document.getElementById("form-title").innerText =
+          "Upload ផលិតផល និងមេរៀន (Admin Dashboard)";
+        document.getElementById("form-subtitle").innerText =
+          "បញ្ចូលរូបភាព តម្លៃ និងព័ត៌មានទំនិញទៅក្នុង Website";
+        document.getElementById("img-edit-hint").innerText = "";
+        document.getElementById("submit-btn").innerText =
+          "+ បញ្ចូលទំនិញទៅក្នុង Website";
+        document.getElementById("submit-btn").className =
+          "w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2.5 rounded-xl transition text-xs shadow-md";
+        document.getElementById("cancel-edit-btn").classList.add("hidden");
+      }
+
+      function readFileAsDataURL(file) {
+        return new Promise((resolve, reject) => {
+          const reader = new FileReader();
+          reader.onload = () => resolve(reader.result);
+          reader.onerror = reject;
+          reader.readAsDataURL(file);
+        });
+      }
+
+      async function handleFormSubmit(e) {
+        e.preventDefault();
+        const submitBtn = document.getElementById("submit-btn");
+        const editId = document.getElementById("edit-item-id").value;
+
+        submitBtn.innerText = "កំពុងរក្សាទុក...";
+        submitBtn.disabled = true;
+
+        try {
+          const fileInput = document.getElementById("new-item-image");
+          let selectedImageUrl = null;
+
+          if (fileInput.files.length > 0) {
+            selectedImageUrl = await readFileAsDataURL(fileInput.files[0]);
+          }
+
+          const cat = document.getElementById("new-item-cat").value;
+          const name = document.getElementById("new-item-name").value;
+          const price =
+            parseFloat(document.getElementById("new-item-price").value) || 0;
+          const tag = document.getElementById("new-item-tag").value || "ថ្មី";
+          const secret = document.getElementById("new-item-secret").value;
+          const info = document.getElementById("new-item-info").value;
+
+          if (editId) {
+            const index = products.findIndex((p) => p.id === editId);
+            if (index !== -1) {
+              products[index] = {
+                ...products[index],
+                cat,
+                name,
+                price,
+                tag,
+                secret,
+                info,
+                image: selectedImageUrl || products[index].image,
+              };
+              alert("បានកែប្រែទំនិញដោយជោគជ័យ!");
+            }
+            cancelEdit();
+          } else {
+            products.unshift({
+              id: "item-" + Date.now(),
+              cat,
+              name,
+              price,
+              tag,
+              image:
+                selectedImageUrl ||
+                "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&q=80",
+              secret,
+              info,
+            });
+            alert("បានបញ្ចូលទំនិញថ្មីជោគជ័យ!");
+            e.target.reset();
+          }
+
+          saveState();
+          renderAdminTable();
+          renderProducts();
+        } catch (err) {
+          console.error(err);
+          alert("មានបញ្ហាក្នុងការរក្សាទុក");
+        } finally {
+          submitBtn.disabled = false;
+          if (!editId) {
+            submitBtn.innerText = "+ បញ្ចូលទំនិញទៅក្នុង Website";
+          }
+        }
+      }
+
+      function switchView(view) {
+        if (view === "admin") {
+          document.getElementById("store-view").classList.add("hidden");
+          document.getElementById("admin-view").classList.remove("hidden");
+          renderAdminTable();
+        } else {
+          document.getElementById("admin-view").classList.add("hidden");
+          document.getElementById("store-view").classList.remove("hidden");
+          renderProducts();
+        }
+      }
+
+      function renderAdminTable() {
+        const container = document.getElementById("admin-items-table");
+        document.getElementById("total-items-count").innerText =
+          products.length;
+        container.innerHTML = "";
+
+        products.forEach((p, idx) => {
+          container.innerHTML += `
+          <div class="flex justify-between items-center p-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs hover:bg-slate-100 transition">
+            <div class="flex items-center space-x-2.5 truncate pr-2">
+              <img src="${p.image || "https://via.placeholder.com/30"}" class="w-9 h-9 rounded-lg object-cover border border-slate-200 flex-shrink-0">
+              <div class="truncate">
+                <span class="font-bold text-slate-800">${p.name}</span>
+                <span class="text-indigo-900 font-black ml-2">$${p.price.toFixed(2)}</span>
+              </div>
+            </div>
+            <div class="flex items-center space-x-1.5 flex-shrink-0">
+              <button onclick="startEdit('${p.id}')" class="text-indigo-600 hover:text-indigo-800 font-semibold px-2.5 py-1 bg-indigo-50 hover:bg-indigo-100 rounded-lg transition">
+                ✏️ កែ
+              </button>
+              <button onclick="deleteProduct(${idx})" class="text-red-500 hover:text-red-700 font-semibold px-2.5 py-1 bg-red-50 hover:bg-red-100 rounded-lg transition">
+                🗑️ លុប
+              </button>
+            </div>
+          </div>
+        `;
+        });
+      }
+
+      function deleteProduct(idx) {
+        if (confirm("តើអ្នកពិតជាចង់លុបទំនិញនេះមែនទេ?")) {
+          products.splice(idx, 1);
+          saveState();
+          renderAdminTable();
+          renderProducts();
+        }
+      }
+
+      renderProducts();
+    </script>
+  </body>
+</html>

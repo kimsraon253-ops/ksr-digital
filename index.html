@@ -1007,17 +1007,22 @@
         }
       }
 
-      function switchView(view) {
-        if (view === "admin") {
-          document.getElementById("store-view").classList.add("hidden");
-          document.getElementById("admin-view").classList.remove("hidden");
-          renderAdminTable();
-        } else {
-          document.getElementById("admin-view").classList.add("hidden");
-          document.getElementById("store-view").classList.remove("hidden");
-          renderProducts();
+     function switchView(view) {
+      if (view === 'admin') {
+        const pwd = prompt("សូមបញ្ចូលលេខកូដសម្ងាត់ Admin ដើម្បីគ្រប់គ្រងទំនិញ៖");
+        if (pwd !== 'ksr8899') {
+          if (pwd !== null) alert("លេខកូដមិនត្រឹមត្រូវទេ! អ្នកមិនមានសិទ្ធិចូលឡើយ។");
+          return;
         }
+        document.getElementById('store-view').classList.add('hidden');
+        document.getElementById('admin-view').classList.remove('hidden');
+        renderAdminTable();
+      } else {
+        document.getElementById('admin-view').classList.add('hidden');
+        document.getElementById('store-view').classList.remove('hidden');
+        renderProducts();
       }
+    }
 
       function renderAdminTable() {
         const container = document.getElementById("admin-items-table");
